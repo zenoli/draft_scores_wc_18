@@ -40,7 +40,7 @@ function sayHello()
 function getDraftsJSON() {
 	init();
     $.getJSON("drafts.json", function(drafts) {
-    	$.getJSON("test_data.json", function(matches) {
+    	$.getJSON("http://worldcup.sfg.io/matches", function(matches) {
     		$.each(drafts, function(idx, draft) {
     			players.push(new Player(draft["name"], draft))
     		});
