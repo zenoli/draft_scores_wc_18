@@ -281,6 +281,7 @@ function appendRow(player) {
 
 
 function displayLog(name) {
+	$('#logs').empty();
 	var titleLog = document.createElement("H3");
 	console.log("IN display log: " + name);
 	participant = players.find(function(e) { return e.name === name});
