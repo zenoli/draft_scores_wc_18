@@ -1,7 +1,7 @@
-//var drafts;
-//var matches;
+var drafts;
+var matches;
 var players = new Array();
-
+/*
 function loadDraftsAndMatches() {
 	var drafts;
 	var matches;
@@ -16,12 +16,11 @@ function loadDraftsAndMatches() {
 }
 
 function computeScores(drafts, matches) {
-	for (var d in drafts){
+	for (var d : drafts){
 		players.push(new Player(draft["name"], draft));
 	}
-	debugPlayers();
 }
-
+*/
 
 
 function sayHello()
@@ -37,7 +36,7 @@ function getDraftsJSON() {
     			players.push(new Player(draft["name"], draft))
     		});
 	    	for (var p in players) {
-	    		//computePlayerScore(p, matches);
+	    		computePlayerScore(p, matches);
 	    	}
     		debugPlayers();
     	});
@@ -59,18 +58,19 @@ function debugPlayers() {
 
 
 function computePlayerScore(player, matches) {
-	alert("in compute player score");
-	/*
-	for (var match : matches) {
-		var events = match["home_team_events"].concat(match["away_team_events"]);
-		for (var e : events) {
+	alert(matches[0].venue);
+	for (var i = 0; i < matches.length; i++) {
+		alert(matches[i].home_team_events[0].player);
+		var events = matches[i]["home_team_events"].concat(matches[i]["away_team_events"]);
+		alert("finish");
+		for (var e in events) {
 			if (e["type_of_event"] === "yellow-card") {
 				if (updateYellowCardScore(player, e["player"])) {
 					player.cardLog.push("Yellow card for " + e["player"] + " against " + match["home_team"]["country"] + ".");
 				}
 			}
 		}
-	}*/
+	}
 }
 
 
