@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>World Cupt Drafting 2018</title>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2, minimum-scale=1"/>
+    <link href="images/icon.png" rel="SHORTCUT ICON" type="image/x-icon"/>
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<script src="jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="score_calculator.js"></script>
+
+		<script type="text/javascript">
+        function read_json() {
+            $.getJSON("data.json", function(data) {
+                alert("My data: " + data["mydata"]);
+                $.each(data["prime"], function(idx,prime) {
+                    alert("Prime number: " + prime);
+                });
+            });
+        }
+    	</script>
+</head>
+
+<body>	
+	<section id="site">	
+		<header class="header colored-back">
+			<img src="images/TitleImg.png">
+			
+			<h1>World Cup 18</h1>
+			
+			<p>Drafting Scores</p>
+		</header>	
+		
+		<section class="text-section">
+			<section class="container-small">
+				<h3>Scores</h3>
+				<center><button type="button" onclick="getDraftsJSON();">Refresh</button></center>
+							
+				<section class="teaching-table">
+					<table cellpadding="5" border="1">
+						<tbody>
+							<tr>
+								<th>Name</th>
+								<th>Goals</th>
+								<th>Assists</th>
+								<th>Yellow Cards</th>
+							</tr>
+
+							<tr>
+								<td><p>Woche 1</p></td>
+								<td><p> - </p></td>
+								<td>						
+									<a href="teaching/fs18/S01/Vorbesprechung Serie 1.pdf">Vorbesprechung Serie 1</a><br>
+								</td>
+								<td><p> - </p></td>
+							</tr>
+							<tr>
+								<td><p>Woche 2</p></td>
+								<td>						
+									<a href="teaching/fs18/S02/Nachbesprechung Serie 1.pdf">Nachbesprechung Serie 1</a>
+								</td>
+								<td>						
+									<a href="teaching/fs18/S02/Vorbesprechung Serie 2.pdf">Vorbesprechung Serie 2</a>
+								</td>
+								<td><p> - </p></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</section>
+		</section>
+
+
+
+
+        <script type="text/javascript">
+        var copyright = "&copy; " + new Date().getFullYear();
+        var my_rick = 'Rick Astley'
+        var clicks = 0;
+        function onClick() {
+            clicks += 1;
+            if(clicks >= my_rick.length) {
+                var anchors = document.getElementsByTagName('a');
+
+                for (var i = 0; i < anchors.length; i++) {
+                    anchors[i].href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                }
+            }
+            
+            if(clicks <= my_rick.length) {
+                document.getElementById('rick').innerHTML = copyright + " " + my_rick.substr(0, clicks);
+            }
+        };
+        </script>
+            
+        <footer class="footer colored-back" onClick="onClick()">
+            <section class="container-small">
+                <p id="rick"><script>document.write(copyright)</script> Sander Staal</p>
+            </section>
+        </footer>
+    </section>
+</body>
+</html>
+
+

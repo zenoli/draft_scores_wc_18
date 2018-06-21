@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Fabbian",
+      "players": [
+        "Neymar",
+        "Valon BEHRAMI"
+      ],
+      "goalie": {
+        "name": "Manuel Neuer",
+        "nation": "Germany"
+      }
+    },
+    {
+      "name": "Olivier",
+      "players": [
+        "CASEMIRO",
+        "Joshua Kimmich"
+      ],
+      "goalie": {
+        "name": "Manuel Neuer",
+        "nation": "Germany"
+      }
+    }
+]
