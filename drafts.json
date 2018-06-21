@@ -1,24 +1,103 @@
 [
     {
-      "name": "Fabbian",
+      "name": "fabian",
       "players": [
-        "Neymar",
-        "Valon BEHRAMI"
+        "alisson",
+        "ricardo rodríguez",
+        "nicolás otamendi",
+        "kyle walker",
+        "javier mascherano",
+        "granit xhaka",
+        "aleksandr golovin",
+        "james rodríguez",
+        "christiano ronaldo",
+        "romelu lukaku",
+        "luis suárez"
+
       ],
       "goalie": {
-        "name": "Manuel Neuer",
-        "nation": "Germany"
+        "name": "alisson",
+        "nation": "brazil"
       }
     },
     {
-      "name": "Olivier",
+      "name": "chris",
       "players": [
-        "casemiro",
-        "Joshua Kimmich"
+        "hugo lloris",
+        "jan vertonghen",
+        "benjamin mendy",
+        "mats hummels",
+        "paul pogba",
+        "luka modrić",
+        "christian eriksen",
+        "dele alli",
+        "harry kane",
+        "lionel messi",
+        "radamel falcao"
       ],
       "goalie": {
-        "name": "Manuel Neuer",
-        "nation": "Germany"
+        "name": "hugo lloris",
+        "nation": "france"
+      }
+    },
+    {
+      "name": "olivier",
+      "players": [
+        "manuel neuer",
+        "joshua kimmich",
+        "raphaël varane",
+        "sergio ramos",
+        "toni kroos",
+        "casemiro",
+        "mesut özil",
+        "marco reus",
+        "kylian mbappé",
+        "ousmane dembélé",
+        "timo werner"
+      ],
+      "goalie": {
+        "name": "manuel neuer",
+        "nation": "germany"
+      }
+    },
+    {
+      "name": "jan",
+      "players": [
+        "david de gea",
+        "marcelo",
+        "martin olsson",
+        "andreas granqvist",
+        "kevin de bruyne",
+        "sergio busquets",
+        "david silva",
+        "ivan rakitić",
+        "antoine griezmann",
+        "eden hazard",
+        "thomas müller"
+      ],
+      "goalie": {
+        "name": "david de gea",
+        "nation": "spain"
+      }
+    },
+    {
+      "name": "ramon",
+      "players": [
+        "thibaut courtois",
+        "jordi alba",
+        "thomas meunier",
+        "thiago silva",
+        "isco",
+        "paulinho",
+        "jakub błaszczykowski",
+        "carlos sánchez",
+        "neymar",
+        "diego costa",
+        "gabriel jesus"
+      ],
+      "goalie": {
+        "name": "david de gea",
+        "nation": "spain"
       }
     }
 ]

@@ -23,7 +23,7 @@
     	</script>
 </head>
 
-<body>	
+<body onload="getDraftsJSON()">	
 	<section id="site">	
 		<header class="header colored-back">
 			<img src="images/TitleImg.png">
@@ -38,14 +38,15 @@
 				<h3>Scores</h3>
 				<center><button type="button" onclick="getDraftsJSON();">Refresh</button></center>
 							
-				<section class="teaching-table">
+				<section class="scores-table">
 					<table cellpadding="5" border="1">
-						<tbody>
+						<tbody id="tablebody">
 							<tr>
 								<th>Name</th>
 								<th>Goals</th>
 								<th>Assists</th>
 								<th>Yellow Cards</th>
+								<th>Total</th>
 							</tr>
 
 							<tr>
