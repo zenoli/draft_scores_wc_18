@@ -35,10 +35,10 @@ function getDraftsJSON() {
     		$.each(drafts, function(idx, draft) {
     			players.push(new Player(draft["name"], draft))
     		});
-	    	for (var p in players) {
-	    		computePlayerScore(p, matches);
+    		console.log(players);
+	    	for (var i = 0; i < players.length; i++) {
+	    		computePlayerScore(players[i], matches);
 	    	}
-    		debugPlayers();
     	});
     });
 }
@@ -58,12 +58,18 @@ function debugPlayers() {
 
 
 function computePlayerScore(player, matches) {
-	alert(matches[0].venue);
+	console.log("Computing score of: " + player.name);
 	for (var i = 0; i < matches.length; i++) {
-		alert(matches[i].home_team_events[0].player);
+		// Skip matches that are have not yet started.
+		if (matches[i].status === "future") {
+			continue;
+		}
+		// Process home team events
+		processEvents(player, matches[i], true);
+		processEvents(player, matches[i], false);
+		//console.log(matches[i].home_team_events[0].player);
 		var events = matches[i]["home_team_events"].concat(matches[i]["away_team_events"]);
-		alert("finish");
-		for (var e in events) {
+		for (var e in matches[i].home_team_events) {
 			if (e["type_of_event"] === "yellow-card") {
 				if (updateYellowCardScore(player, e["player"])) {
 					player.cardLog.push("Yellow card for " + e["player"] + " against " + match["home_team"]["country"] + ".");
@@ -71,11 +77,36 @@ function computePlayerScore(player, matches) {
 			}
 		}
 	}
+	console.log(player.cardLog);
 }
 
 
-function updateYellowCardScore(player, footballer) {
+function processEvents(participant, match, isHomeTeam) {
+	var events = isHomeTeam ? match.home_team_events : match.away_team_events;
+	if (events === undefined || events.length == 0) {
+		return;
+	}
+	var oponentTeam = isHomeTeam ? match.away_team.country : match.home_team.country;
+	for (var i = 0; i < events.length; i++) {
+		if (events[i].type_of_event === "yellow-card") {
+			if (updateYellowCardScore(participant, events[i].player)) {
+				participant.cardLog.push("Yellow card for " + events[i].player + " against " + oponentTeam + ".");
+			}
+		}
+	}
+}
 
+
+function updateYellowCardScore(participant, player) {
+	if (player.toLowerCase() == "casemiro") {
+		console.log("ITS HIM");
+	}
+	if (participant.drafts.players.indexOf(player.toLowerCase()) != -1) {
+		console.log("Increasing score");
+		participant.cardScore += 2;
+		return true;
+	}
+	return false;
 }
 
 class Player {
