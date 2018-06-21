@@ -176,7 +176,7 @@ class Player {
 	}
 
 	total() {
-		return this.goalScore + this. assistScore + this.cardScore + this.keeperScore;
+		return this.goalScore + this.assistScore + this.cardScore + this.keeperScore;
 	}
 }
 
@@ -189,13 +189,28 @@ function createTable(sort = "total") {
 			return a.total() - b.total();
 		});
 	}
-	else if (sort === goalScore) {
-		player.sort(function(a,b) {
+	else if (sort === "Goals") {
+		players.sort(function(a,b) {
 			return a.goalScore - b.goalScore;
 		})
 	}
-	players.reverse();
-	for (var i = 0; i < players.length; i++) {
+	else if (sort === "Assists") {
+		players.sort(function(a,b) {
+			return a.assistScore - b.assistScore;
+		})
+	}
+	else if (sort === "Cards") {
+		players.sort(function(a,b) {
+			return a.cardScore - b.cardScore;
+		})
+	}
+	else if (sort === "Keeper Stats") {
+		players.sort(function(a,b) {
+			return a.keeperScore - b.keeperScore;
+		})
+	}
+	//players.reverse();
+	for (var i = players.length - 1; i >= 0; i--) {
 		appendRow(players[i]);
 	}
 	
@@ -212,26 +227,36 @@ function createHeader() {
 
 	var thGoals = document.createElement("TH");
 	var textGoals = document.createTextNode("Goals");
+	var onClickGoals = 'createTable("Goals");';
+	thGoals.setAttribute("onClick", onClickGoals);
 	thGoals.appendChild(textGoals);
 	tr.appendChild(thGoals);
 
 	var thAssists = document.createElement("TH");
 	var textAssists = document.createTextNode("Assists");
+	var onClickAssists = 'createTable("Assists");';
+	thAssists.setAttribute("onClick", onClickAssists);
 	thAssists.appendChild(textAssists);
 	tr.appendChild(thAssists);
 
 	var thCards = document.createElement("TH");
 	var textCards = document.createTextNode("Cards");
+	var onClickCards = 'createTable("Cards");';
+	thCards.setAttribute("onClick", onClickCards);
 	thCards.appendChild(textCards);
 	tr.appendChild(thCards);
 
 	var thKeeper = document.createElement("TH");
 	var textKeeper = document.createTextNode("Keeper");
+	var onClickKeeper = 'createTable("Keeper Stats");';
+	thKeeper.setAttribute("onClick", onClickKeeper);
 	thKeeper.appendChild(textKeeper);
 	tr.appendChild(thKeeper);
 
 	var thTotal = document.createElement("TH");
 	var textTotal = document.createTextNode("Total");
+	var onClickTotal = 'createTable("Total");';
+	thTotal.setAttribute("onClick", onClickTotal);
 	thTotal.appendChild(textTotal);
 	tr.appendChild(thTotal);
 
@@ -245,7 +270,6 @@ function appendRow(player) {
 	var tdName = document.createElement("TD");
 	tdName.setAttribute("id", player.name);
 	var onClickFunction = 'displayLog("' + player.name + '");';
-	console.log("ONCLICKFUNCTION: " + onClickFunction);
 	tdName.setAttribute("onClick", onClickFunction);
 	var textName = document.createTextNode(player.name);
 	tdName.appendChild(textName);
