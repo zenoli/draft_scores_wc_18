@@ -44,11 +44,11 @@ function getDraftsJSON() {
     		$.each(drafts, function(idx, draft) {
     			players.push(new Player(draft["name"], draft))
     		});
-    		console.log(players);
 	    	for (var i = 0; i < players.length; i++) {
 	    		computePlayerScore(players[i], matches);
 	    	}
 	    	createTable();
+	    	console.log("About to display log");
     	});
     });
 }
@@ -68,7 +68,6 @@ function debugPlayers() {
 
 
 function computePlayerScore(player, matches) {
-	console.log("Computing score of: " + player.name);
 	for (var i = 0; i < matches.length; i++) {
 		// Skip matches that are have not yet started.
 		if (matches[i].status === "future") {
@@ -79,18 +78,7 @@ function computePlayerScore(player, matches) {
 		// Process home team events
 		processEvents(player, matches[i], true);
 		processEvents(player, matches[i], false);
-		//console.log(matches[i].home_team_events[0].player);
-		var events = matches[i]["home_team_events"].concat(matches[i]["away_team_events"]);
-		for (var e in matches[i].home_team_events) {
-			if (e["type_of_event"] === "yellow-card") {
-				if (updateYellowCardScore(player, e["player"])) {
-					player.cardLog.push("Yellow card for " + e["player"] + " against " + match["home_team"]["country"] + ".");
-				}
-			}
-		}
 	}
-	console.log(player.cardLog);
-	console.log(player.goalLog);
 }
 
 
@@ -104,7 +92,7 @@ function processEvents(participant, match, isHomeTeam) {
 		// Handle GOAL SCORES
 		if (events[i].type_of_event === "goal") {
 			if (updateGoalScore(participant, events[i].player)) {
-				participant.cardLog.push("Goal from " + events[i].player + " against " + oponentTeam + ".");
+				participant.goalLog.push("Goal from " + events[i].player + " against " + oponentTeam + ".");
 			}
 		}
 		// Handle CARD SCORES
@@ -129,7 +117,6 @@ function updateCardScore(participant, player, isYellow = true) {
 
 function computeKeeperScore(participant, match) {
 	goalie = participant.drafts.goalie;
-	//console.log("Computing keeper score:" + goalie.nation + ", " + match.home_team.country + ", " match.away_team.country);
 	if (goalie.nation === match.home_team.country.toLowerCase()) {
 		if (match.away_team.goals == 0) {
 			participant.keeperScore += CLEAN_VEST_POINTS;
@@ -137,7 +124,8 @@ function computeKeeperScore(participant, match) {
 		}
 		else {
 			participant.keeperScore += match.away_team.goals;
-			participant.keeperLog.push(goalie.name + " received " + match.away_team.goals + " against " + match.away_team.country);
+			var goalWord = match.away_team.goals > 1 ? "goals" : "goal";
+			participant.keeperLog.push(goalie.name + " received " + match.away_team.goals + " " + goalWord + " against " + match.away_team.country);
 		}
 	}
 	else if (goalie.nation === match.away_team.country.toLowerCase()) {
@@ -147,7 +135,8 @@ function computeKeeperScore(participant, match) {
 		}
 		else {
 			participant.keeperScore += match.home_team.goals;
-			participant.keeperLog.push(goalie.name + " received " + match.home_team.goals + " against " + match.home_team.country);
+			var goalWord = match.home_team.goals > 1 ? "goals" : "goal";
+			participant.keeperLog.push(goalie.name + " received " + match.home_team.goals + " " + goalWord + " against " + match.home_team.country);
 		}
 	}
 }
@@ -177,9 +166,13 @@ class Player {
 		this.keeperScore = 0;
 
 		this.goalLog = [];
+		this.goalLog.name = "Goals";
 		this.assistLog = [];
+		this.assistLog.name = "Assists";
 		this.cardLog = [];
+		this.cardLog.name = "Cards";
 		this.keeperLog = [];
+		this.keeperLog.name = "Keeper Stats";
 	}
 
 	total() {
@@ -250,6 +243,10 @@ function appendRow(player) {
 	var tr = document.createElement("TR");
 
 	var tdName = document.createElement("TD");
+	tdName.setAttribute("id", player.name);
+	var onClickFunction = 'displayLog("' + player.name + '");';
+	console.log("ONCLICKFUNCTION: " + onClickFunction);
+	tdName.setAttribute("onClick", onClickFunction);
 	var textName = document.createTextNode(player.name);
 	tdName.appendChild(textName);
 	tr.appendChild(tdName);
@@ -280,7 +277,39 @@ function appendRow(player) {
 	tr.appendChild(tdTotal);
 
 	document.getElementById("tablebody").appendChild(tr);
-} 
+}
+
+
+function displayLog(name) {
+	var titleLog = document.createElement("H3");
+	console.log("IN display log: " + name);
+	participant = players.find(function(e) { return e.name === name});
+	titleLog.innerHTML = "Logs of " + participant.name;
+	document.getElementById("logs").appendChild(titleLog);
+
+	console.log(participant.keeperLog);
+	displayList(participant.goalLog);
+	displayList(participant.assistLog);
+	displayList(participant.cardLog);
+	displayList(participant.keeperLog);
+}
+
+function displayList(list){
+	if (list.length == 0) {
+		return;
+	}
+	var titleList = document.createElement("H2");
+	titleList.innerHTML = "<b>" + list.name + "</b>";
+	document.getElementById("logs").appendChild(titleList);
+	var ul = document.createElement("UL");
+	for (var i = 0; i < list.length; i++) {
+		console.log(i);
+		var li = document.createElement("LI");
+		li.innerHTML = list[i];
+		ul.appendChild(li);
+	}
+	document.getElementById("logs").appendChild(ul);
+}
 
 
 function init() {
