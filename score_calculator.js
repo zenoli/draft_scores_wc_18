@@ -1,3 +1,10 @@
+const YELLOW_CARD_POINTS = 2;
+const RED_CARD_POINTS = 5;
+const GOAL_POINTS = 2;
+const ASSIST_POINTS = 2;
+const CLEAN_VEST_POINTS = 3;
+
+
 var drafts;
 var matches;
 var players = new Array();
@@ -88,22 +95,20 @@ function processEvents(participant, match, isHomeTeam) {
 	}
 	var oponentTeam = isHomeTeam ? match.away_team.country : match.home_team.country;
 	for (var i = 0; i < events.length; i++) {
-		if (events[i].type_of_event === "yellow-card") {
-			if (updateYellowCardScore(participant, events[i].player)) {
-				participant.cardLog.push("Yellow card for " + events[i].player + " against " + oponentTeam + ".");
+		if (events[i].type_of_event === "yellow-card" || events[i].type_of_event === "red-card") {
+			var isYellow = events[i].type_of_event === "yellow-card";
+			var cardName = isYellow ? "Yellow" : "Red";
+			if (updateCardScore(participant, events[i].player, isYellow)) {
+				participant.cardLog.push(cardName + " card for " + events[i].player + " against " + oponentTeam + ".");
 			}
 		}
 	}
 }
 
 
-function updateYellowCardScore(participant, player) {
-	if (player.toLowerCase() == "casemiro") {
-		console.log("ITS HIM");
-	}
+function updateCardScore(participant, player, isYellow = true) {
 	if (participant.drafts.players.indexOf(player.toLowerCase()) != -1) {
-		console.log("Increasing score");
-		participant.cardScore += 2;
+		participant.cardScore += isYellow ? YELLOW_CARD_POINTS : RED_CARD_POINTS;
 		return true;
 	}
 	return false;
