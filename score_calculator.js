@@ -40,7 +40,7 @@ function sayHello()
 function getDraftsJSON() {
 	init();
     $.getJSON("drafts.json", function(drafts) {
-    	$.getJSON("http://worldcup.sfg.io/matches", function(matches) {
+    	$.getJSON("https://worldcup.sfg.io/matches", function(matches) {
     		$.each(drafts, function(idx, draft) {
     			players.push(new Player(draft["name"], draft))
     		});
@@ -181,10 +181,10 @@ class Player {
 }
 
 
-function createTable(sort = "total") {
+function createTable(sort = "Total") {
 	$('#tablebody').empty();
 	createHeader();
-	if (sort === "total") {
+	if (sort === "Total") {
 		players.sort(function(a,b) {
 			return a.total() - b.total();
 		});
