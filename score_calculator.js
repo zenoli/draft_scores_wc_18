@@ -55,6 +55,9 @@ function computeAssistScore(participant, assists) {
 		if (participant.drafts.players.indexOf(assists[i].name.toLowerCase()) != -1) {
 			console.log(participant.name + "gets assist for " + assists[i].name);
 			participant.assistScore += ASSIST_POINTS * assists[i].assists;
+			var assistWord = assists[i].assists > 1 ? " assists" : " assist";
+			var pointWord = assists[i].assists > 1 ? " PTS)" : " PT)";
+			participant.assistLog.push(assists[i].assists + assistWord + " from " + assists[i].name + ". (" + assists[i].assists + pointWord);
 		}
 	}
 }
