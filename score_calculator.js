@@ -1,5 +1,5 @@
 const YELLOW_CARD_POINTS = 2;
-const RED_CARD_POINTS = 5;
+const RED_CARD_POINTS = 8;
 const GOAL_POINTS = 2;
 const GOALIE_GOAL_POINTS = 10;
 const ASSIST_POINTS = 2;
@@ -89,10 +89,11 @@ function processEvents(participant, match, isHomeTeam) {
 	}
 	var oponentTeam = isHomeTeam ? match.away_team.country : match.home_team.country;
 	for (var i = 0; i < events.length; i++) {
+		var time = events[i].time + ": ";
 		// Handle GOAL SCORES
-		if (events[i].type_of_event === "goal") {
+		if (events[i].type_of_event === "goal" || events[i].type_of_event === "goal-penalty") {
 			if (updateGoalScore(participant, events[i].player)) {
-				participant.goalLog.push("Goal from " + events[i].player + " against " + oponentTeam + ".");
+				participant.goalLog.push(time + "Goal from " + events[i].player + " against " + oponentTeam + ". (" + GOAL_POINTS + " PTS)");
 			}
 		}
 		// Handle CARD SCORES
@@ -100,7 +101,8 @@ function processEvents(participant, match, isHomeTeam) {
 			var isYellow = events[i].type_of_event === "yellow-card";
 			var cardName = isYellow ? "Yellow" : "Red";
 			if (updateCardScore(participant, events[i].player, isYellow)) {
-				participant.cardLog.push(cardName + " card for " + events[i].player + " against " + oponentTeam + ".");
+				var points = isYellow ? YELLOW_CARD_POINTS : RED_CARD_POINTS;
+				participant.cardLog.push(time + cardName + " card for " + events[i].player + " against " + oponentTeam + ". (" + points + " PTS)");
 			}
 		}
 	}
@@ -120,23 +122,25 @@ function computeKeeperScore(participant, match) {
 	if (goalie.nation === match.home_team.country.toLowerCase()) {
 		if (match.away_team.goals == 0) {
 			participant.keeperScore += CLEAN_VEST_POINTS;
-			participant.keeperLog.push("Clean vest from " + goalie.name + " against " + match.away_team.country);
+			participant.keeperLog.push("Clean vest from " + goalie.name + " against " + match.away_team.country + ". (" + CLEAN_VEST_POINTS + " PTS)");
 		}
 		else {
 			participant.keeperScore += match.away_team.goals;
 			var goalWord = match.away_team.goals > 1 ? "goals" : "goal";
-			participant.keeperLog.push(goalie.name + " received " + match.away_team.goals + " " + goalWord + " against " + match.away_team.country);
+			var pointWord = match.away_team.goals > 1 ? " PTS)" : " PT)";
+			participant.keeperLog.push(goalie.name + " received " + match.away_team.goals + " " + goalWord + " against " + match.away_team.country + ". (" + match.away_team.goals + pointWord);
 		}
 	}
 	else if (goalie.nation === match.away_team.country.toLowerCase()) {
 		if (match.home_team.goals == 0) {
 			participant.keeperScore += CLEAN_VEST_POINTS;
-			participant.keeperLog.push("Clean vest from " + goalie.name + " against " + match.home_team.country);
+			participant.keeperLog.push("Clean vest from " + goalie.name + " against " + match.home_team.country + ". (" + CLEAN_VEST_POINTS + " PTS)");
 		}
 		else {
 			participant.keeperScore += match.home_team.goals;
 			var goalWord = match.home_team.goals > 1 ? "goals" : "goal";
-			participant.keeperLog.push(goalie.name + " received " + match.home_team.goals + " " + goalWord + " against " + match.home_team.country);
+			var pointWord = match.away_team.goals > 1 ? " PTS)" : " PT)";
+			participant.keeperLog.push(goalie.name + " received " + match.home_team.goals + " " + goalWord + " against " + match.home_team.country + ". (" + match.away_team.goals + pointWord);
 		}
 	}
 }
