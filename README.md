@@ -1,4 +1,4 @@
-# draft_scores_wc_18
+# World Cup 18 - Draft Scores
 Live scores for the wolrd cup 18 drafting game of 'Ravensburger Tippspieler'.
 
 The data is delivered by the awesome free wc18 api of @estiens (Kudos):
