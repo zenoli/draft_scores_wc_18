@@ -2,11 +2,11 @@ const YELLOW_CARD_POINTS = 2;
 const RED_CARD_POINTS = 8;
 const GOAL_POINTS = 2;
 const GOALIE_GOAL_POINTS = 10;
-const ASSIST_POINTS = 2;
+const ASSIST_POINTS = 1;
 const CLEAN_VEST_POINTS = 3;
 
 
-var drafts, matches;
+var drafts, matches, assists;
 var players = new Array();
 
 
@@ -15,24 +15,28 @@ function updateScores() {
 	reset();
 	// fetch 'drafts.json'
     $.getJSON("drafts.json", function(drafts) {
-    	// fetsch matches json
-    	$.getJSON("https://worldcup.sfg.io/matches", function(matches) {
-    		// initialize players
-    		$.each(drafts, function(idx, draft) {
-    			players.push(new Player(draft["name"], draft))
-    		});
-    		// compute player scores
-	    	for (var i = 0; i < players.length; i++) {
-	    		computePlayerScore(players[i], matches);
-	    	}
-	    	// create html table
-	    	createTable();
-    	});
+    	$.getJSON("assists.json", function(assists) {
+	    	// fetsch matches json
+	    	$.getJSON("https://worldcup.sfg.io/matches", function(matches) {
+	    		// initialize players
+	    		$.each(drafts, function(idx, draft) {
+	    			players.push(new Player(draft["name"], draft))
+	    		});
+	    		// compute player scores
+		    	for (var i = 0; i < players.length; i++) {
+		    		computePlayerScore(players[i], matches, assists);
+		    	}
+		    	// create html table
+		    	createTable();
+	    	});
+	    });
     });
 }
 
 
-function computePlayerScore(player, matches) {
+function computePlayerScore(player, matches, assists) {
+	// compute assist score separately
+	computeAssistScore(player, assists);
 	// iterates through all matches and computes the score for 'player'
 	for (var i = 0; i < matches.length; i++) {
 		// Skip matches that are have not yet started.
@@ -45,6 +49,15 @@ function computePlayerScore(player, matches) {
 	}
 }
 
+
+function computeAssistScore(participant, assists) {
+	for (var i = 0; i < assists.length; i++) {
+		if (participant.drafts.players.indexOf(assists[i].name.toLowerCase()) != -1) {
+			console.log(participant.name + "gets assist for " + assists[i].name);
+			participant.assistScore += ASSIST_POINTS * assists[i].assists;
+		}
+	}
+}
 
 function processEvents(participant, match, isHomeTeam) {
 	var events = isHomeTeam ? match.home_team_events : match.away_team_events;
