@@ -6,76 +6,40 @@ const ASSIST_POINTS = 2;
 const CLEAN_VEST_POINTS = 3;
 
 
-var drafts;
-var matches;
+var drafts, matches;
 var players = new Array();
-/*
-function loadDraftsAndMatches() {
-	var drafts;
-	var matches;
-	$.when(
-		$.getJSON("drafts.json", function(data) {
-			drafts = data;
-		}),
-		$.getJSON("test_data.json", function(data) {
-			matches = data;
-		})
-	).then(computeScores(drafts, matches));
-}
-
-function computeScores(drafts, matches) {
-	for (var d : drafts){
-		players.push(new Player(draft["name"], draft));
-	}
-}
-*/
 
 
-function sayHello()
-{
-	alert("Hello there");
-}
-
-
-function getDraftsJSON() {
-	init();
+function updateScores() {
+	// Parses drafts and matches jsons, compute the scores and updates the html table.
+	reset();
+	// fetch 'drafts.json'
     $.getJSON("drafts.json", function(drafts) {
+    	// fetsch matches json
     	$.getJSON("https://worldcup.sfg.io/matches", function(matches) {
+    		// initialize players
     		$.each(drafts, function(idx, draft) {
     			players.push(new Player(draft["name"], draft))
     		});
+    		// compute player scores
 	    	for (var i = 0; i < players.length; i++) {
 	    		computePlayerScore(players[i], matches);
 	    	}
+	    	// create html table
 	    	createTable();
-	    	console.log("About to display log");
     	});
     });
 }
 
-function getMatchesJSON() {
-    $.getJSON("test_data.json", function(data) {
-    	matches = data;
-    });
-}
-
-
-function debugPlayers() {
-	alert(players[0].name);
-	alert(players[0].drafts);
-}
-
-
 
 function computePlayerScore(player, matches) {
+	// iterates through all matches and computes the score for 'player'
 	for (var i = 0; i < matches.length; i++) {
 		// Skip matches that are have not yet started.
 		if (matches[i].status === "future") {
 			continue;
 		}
-
 		computeKeeperScore(player, matches[i]);
-		// Process home team events
 		processEvents(player, matches[i], true);
 		processEvents(player, matches[i], false);
 	}
@@ -111,6 +75,10 @@ function processEvents(participant, match, isHomeTeam) {
 
 function updateCardScore(participant, player, isYellow = true) {
 	if (participant.drafts.players.indexOf(player.toLowerCase()) != -1) {
+		// TODO: Fix this by storing players as {"name":"carlos sanches", "country":"uruguay"}
+		if(!isYellow && player === "Carlos SANCHEZ") {
+			return false;
+		}
 		participant.cardScore += isYellow ? YELLOW_CARD_POINTS : RED_CARD_POINTS;
 		return true;
 	}
@@ -341,7 +309,8 @@ function displayList(list){
 }
 
 
-function init() {
+function reset() {
+	// Reset all objects
 	players = new Array();
 	matches = null;
 	drafts = null;

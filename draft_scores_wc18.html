@@ -9,21 +9,10 @@
 	<link href="assets/css/style.css" rel="stylesheet">
 
 	<script src="jquery-3.3.1.min.js"></script>
-		<script type="text/javascript" src="score_calculator.js"></script>
-
-		<script type="text/javascript">
-        function read_json() {
-            $.getJSON("data.json", function(data) {
-                alert("My data: " + data["mydata"]);
-                $.each(data["prime"], function(idx,prime) {
-                    alert("Prime number: " + prime);
-                });
-            });
-        }
-    	</script>
+	<script type="text/javascript" src="score_calculator.js"></script>
 </head>
 
-<body onload="getDraftsJSON()">	
+<body onload="updateScores()">	
 	<section id="site">	
 		<header class="header colored-back">
 			<img src="images/wc2018_logo.png">
@@ -34,7 +23,7 @@
 		<section class="text-section">
 			<section class="container-small">
 				<h3>Scores</h3>
-				<center><button type="button" onclick="getDraftsJSON();">Refresh</button></center>
+				<center><button type="button" onclick="updateScores();">Refresh</button></center>
 				<center><h3></h3></center>
 							
 				<section id="scorestable" class="scores-table">
@@ -52,13 +41,9 @@
 				</section>
 				<h3></h3>
 				<section id="logs">
-
 				</section>
 			</section>
 		</section>
-
-
-
 
         <script type="text/javascript">
         var copyright = "&copy; " + new Date().getFullYear();
