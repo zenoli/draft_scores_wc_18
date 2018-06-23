@@ -353,7 +353,7 @@ tr {
 	background-color: #FFFFFF;
 }
 
-tr:nth-child(2n) {
+tr:nth-child(odd) {
 	background-color: #F9F9F9;
 }
 

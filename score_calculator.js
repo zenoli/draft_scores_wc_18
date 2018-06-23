@@ -77,8 +77,10 @@ function processEvents(participant, match, isHomeTeam) {
 			}
 		}
 		// Handle CARD SCORES
-		else if (events[i].type_of_event === "yellow-card" || events[i].type_of_event === "red-card") {
-			var isYellow = events[i].type_of_event === "yellow-card";
+		else if (events[i].type_of_event === "yellow-card" 
+			  || events[i].type_of_event === "yellow-card-second"
+			  || events[i].type_of_event === "red-card") {
+			var isYellow = events[i].type_of_event === "yellow-card" || events[i].type_of_event === "yellow-card-second";
 			var cardName = isYellow ? "Yellow" : "Red";
 			if (updateCardScore(participant, events[i].player, isYellow)) {
 				var points = isYellow ? YELLOW_CARD_POINTS : RED_CARD_POINTS;
@@ -268,22 +270,22 @@ function appendRow(player) {
 	tdGoals.appendChild(textGoals);
 	tr.appendChild(tdGoals);
 
-	var tdAssists = document.createElement("TH");
+	var tdAssists = document.createElement("TD");
 	var textAssists = document.createTextNode(player.assistScore);
 	tdAssists.appendChild(textAssists);
 	tr.appendChild(tdAssists);
 
-	var tdCards = document.createElement("TH");
+	var tdCards = document.createElement("TD");
 	var textCards = document.createTextNode(player.cardScore);
 	tdCards.appendChild(textCards);
 	tr.appendChild(tdCards);
 
-	var tdKeeper = document.createElement("TH");
+	var tdKeeper = document.createElement("TD");
 	var textKeeper = document.createTextNode(player.keeperScore);
 	tdKeeper.appendChild(textKeeper);
 	tr.appendChild(tdKeeper);
 
-	var tdTotal = document.createElement("TH");
+	var tdTotal = document.createElement("TD");
 	var textTotal = document.createTextNode(player.total());
 	tdTotal.appendChild(textTotal);
 	tr.appendChild(tdTotal);
