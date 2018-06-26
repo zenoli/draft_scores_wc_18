@@ -33,6 +33,10 @@ div.icon {
     font-size: 0.7em;
 }
 
+#log-list {
+	font-size: 2.9vw;
+}
+
 .colored-back {
 	background:#DEEAE6;
 }
@@ -343,9 +347,7 @@ table {
 }
 
 td {
-	padding: 1em;
-	padding-right: 0em;
-	padding-left: 0em;
+	padding: 0.5em;
 	line-height: 1.5em;
 	vertical-align: center;
 	border: 1px solid #DDD;
@@ -369,7 +371,7 @@ img {
 
 th {
 	text-align: center;
-	padding: 1em;
+	padding: 0.5em;
 	line-height: 1.5em;
 	vertical-align: center;
 	background-color: #F9F9F9;
