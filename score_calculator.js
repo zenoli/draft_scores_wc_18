@@ -67,8 +67,14 @@ function processEvents(participant, match, isHomeTeam) {
 	if (events === undefined || events.length == 0) {
 		return;
 	}
+	var team = isHomeTeam ? match.home_team.country : match.away_team.country;
 	var oponentTeam = isHomeTeam ? match.away_team.country : match.home_team.country;
+
 	for (var i = 0; i < events.length; i++) {
+		// Ignore events of Carlos Sanchez from Colombia.
+		if (events[i].player.toLowerCase() === "carlos sanchez" && team.toLowerCase() === "colombia") {
+			continue;
+		}
 		var time = events[i].time + ": ";
 		// Handle GOAL SCORES
 		if (events[i].type_of_event === "goal" || events[i].type_of_event === "goal-penalty") {
@@ -93,10 +99,10 @@ function processEvents(participant, match, isHomeTeam) {
 
 function updateCardScore(participant, player, isYellow = true) {
 	if (participant.drafts.players.indexOf(player.toLowerCase()) != -1) {
-		// TODO: Fix this by storing players as {"name":"carlos sanches", "country":"uruguay"}
+		/*// TODO: Fix this by storing players as {"name":"carlos sanches", "country":"uruguay"}
 		if(!isYellow && player === "Carlos SANCHEZ") {
 			return false;
-		}
+		}*/
 		participant.cardScore += isYellow ? YELLOW_CARD_POINTS : RED_CARD_POINTS;
 		return true;
 	}
