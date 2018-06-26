@@ -253,6 +253,7 @@ function createMobileHeader() {
 
 	var thName = document.createElement("TH");
 	var textName = document.createTextNode("Name");
+	thName.setAttribute('style', 'text-align:left');
 	thName.appendChild(textName);
 	tr.appendChild(thName);
 
@@ -345,10 +346,13 @@ function appendRow(player) {
 	var tr = document.createElement("TR");
 
 	var tdName = document.createElement("TD");
+
+	//tdName.setAttribute('style', 'text-align:left');
+	//tdName.setAttribute('style', 'padding-left: 1em');
 	tdName.setAttribute("id", player.name);
 	var onClickFunction = 'displayLog("' + player.name + '");';
 	tdName.setAttribute("onClick", onClickFunction);
-	var textName = document.createTextNode(player.name);
+	var textName = document.createTextNode(capitalize(player.name));
 	tdName.appendChild(textName);
 	tr.appendChild(tdName);
 
@@ -419,4 +423,8 @@ function reset() {
 	players = new Array();
 	matches = null;
 	drafts = null;
+}
+
+function capitalize(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
