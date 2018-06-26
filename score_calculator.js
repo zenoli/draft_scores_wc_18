@@ -225,6 +225,65 @@ function createTable(sort = "Total") {
 
 
 function createHeader() {
+	var width = $(window).width();
+	console.log(width);
+	if (width < 482) {
+		console.log("Creating Mobile Header");
+		createMobileHeader();
+	}
+	else {
+		console.log("Creating Desktop Header");
+		createDesktopHeader();
+	}
+}
+
+function createMobileHeader() {
+	var tr = document.createElement("TR");
+
+	var thName = document.createElement("TH");
+	var textName = document.createTextNode("Name");
+	thName.appendChild(textName);
+	tr.appendChild(thName);
+
+	var thGoals = document.createElement("TH");
+	var textGoals = document.createTextNode("G");
+	var onClickGoals = 'createTable("Goals");';
+	thGoals.setAttribute("onClick", onClickGoals);
+	thGoals.appendChild(textGoals);
+	tr.appendChild(thGoals);
+
+	var thAssists = document.createElement("TH");
+	var textAssists = document.createTextNode("AS");
+	var onClickAssists = 'createTable("Assists");';
+	thAssists.setAttribute("onClick", onClickAssists);
+	thAssists.appendChild(textAssists);
+	tr.appendChild(thAssists);
+
+	var thCards = document.createElement("TH");
+	var textCards = document.createTextNode("CA");
+	var onClickCards = 'createTable("Cards");';
+	thCards.setAttribute("onClick", onClickCards);
+	thCards.appendChild(textCards);
+	tr.appendChild(thCards);
+
+	var thKeeper = document.createElement("TH");
+	var textKeeper = document.createTextNode("KE");
+	var onClickKeeper = 'createTable("Keeper Stats");';
+	thKeeper.setAttribute("onClick", onClickKeeper);
+	thKeeper.appendChild(textKeeper);
+	tr.appendChild(thKeeper);
+
+	var thTotal = document.createElement("TH");
+	var textTotal = document.createTextNode("TO");
+	var onClickTotal = 'createTable("Total");';
+	thTotal.setAttribute("onClick", onClickTotal);
+	thTotal.appendChild(textTotal);
+	tr.appendChild(thTotal);
+
+	document.getElementById("tablebody").appendChild(tr);
+}
+
+function createDesktopHeader() {
 	var tr = document.createElement("TR");
 
 	var thName = document.createElement("TH");
