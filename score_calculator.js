@@ -237,6 +237,17 @@ function createHeader() {
 	}
 }
 
+function createImgElement(name) {
+	var img = document.createElement("img");
+	var imgPath = "images/icons/"
+	img.setAttribute('src', imgPath + name);
+	img.setAttribute('class', 'icon');
+	//img.setAttribute('alt', 'na');
+	img.setAttribute('height', '30px');
+	img.setAttribute('width', '30px');
+	return img;
+}
+
 function createMobileHeader() {
 	var tr = document.createElement("TR");
 
@@ -246,38 +257,38 @@ function createMobileHeader() {
 	tr.appendChild(thName);
 
 	var thGoals = document.createElement("TH");
-	var textGoals = document.createTextNode("G");
+	var imgGoals = createImgElement('goal_icon.png');
 	var onClickGoals = 'createTable("Goals");';
 	thGoals.setAttribute("onClick", onClickGoals);
-	thGoals.appendChild(textGoals);
+	thGoals.appendChild(imgGoals);
 	tr.appendChild(thGoals);
 
 	var thAssists = document.createElement("TH");
-	var textAssists = document.createTextNode("AS");
+	var imgAssists = createImgElement('assist_icon.png');
 	var onClickAssists = 'createTable("Assists");';
 	thAssists.setAttribute("onClick", onClickAssists);
-	thAssists.appendChild(textAssists);
+	thAssists.appendChild(imgAssists);
 	tr.appendChild(thAssists);
 
 	var thCards = document.createElement("TH");
-	var textCards = document.createTextNode("CA");
+	var imgCards = createImgElement('cards_icon.png');
 	var onClickCards = 'createTable("Cards");';
 	thCards.setAttribute("onClick", onClickCards);
-	thCards.appendChild(textCards);
+	thCards.appendChild(imgCards);
 	tr.appendChild(thCards);
 
 	var thKeeper = document.createElement("TH");
-	var textKeeper = document.createTextNode("KE");
+	var imgKeeper = createImgElement('keeper_icon.png');
 	var onClickKeeper = 'createTable("Keeper Stats");';
 	thKeeper.setAttribute("onClick", onClickKeeper);
-	thKeeper.appendChild(textKeeper);
+	thKeeper.appendChild(imgKeeper);
 	tr.appendChild(thKeeper);
 
 	var thTotal = document.createElement("TH");
-	var textTotal = document.createTextNode("TO");
+	var imgTotal = createImgElement('total_icon.png');
 	var onClickTotal = 'createTable("Total");';
 	thTotal.setAttribute("onClick", onClickTotal);
-	thTotal.appendChild(textTotal);
+	thTotal.appendChild(imgTotal);
 	tr.appendChild(thTotal);
 
 	document.getElementById("tablebody").appendChild(tr);

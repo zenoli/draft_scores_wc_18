@@ -29,6 +29,10 @@ body span {
   color: #00A6CC;
 }
 
+div.icon {
+    font-size: 0.7em;
+}
+
 .colored-back {
 	background:#DEEAE6;
 }
@@ -340,13 +344,15 @@ table {
 
 td {
 	padding: 1em;
+	padding-right: 0em;
+	padding-left: 0em;
 	line-height: 1.5em;
-	vertical-align: top;
+	vertical-align: center;
 	border: 1px solid #DDD;
 	background-color: transparent;
 	border-spacing: 0;
     border-collapse: collapse;
-	text-align: left;
+	text-align: center;
 }
 
 tr {
@@ -357,17 +363,23 @@ tr:nth-child(odd) {
 	background-color: #F9F9F9;
 }
 
+img {
+	vertical-align: middle;
+}
+
 th {
-	text-align: left;
+	text-align: center;
 	padding: 1em;
 	line-height: 1.5em;
-	vertical-align: top;
+	vertical-align: center;
 	background-color: #F9F9F9;
 	border-spacing: 0;
     border-collapse: collapse;
 	border: 1px solid #ddd;
 	font-weight: bold;
 }
+
+
 
 td li {
 	margin-left: 1em;
