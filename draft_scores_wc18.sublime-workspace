@@ -1,0 +1,2036 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ass",
+				"assistScore"
+			],
+			[
+				"onCLi",
+				"onClickTotal"
+			],
+			[
+				"oncl",
+				"onClickAssists"
+			],
+			[
+				"tabl",
+				"createTable"
+			],
+			[
+				"onc",
+				"onClickFunction"
+			],
+			[
+				"keep",
+				"keeperLog"
+			],
+			[
+				"titleL",
+				"titleList"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"dis",
+				"displayLog"
+			],
+			[
+				"goal",
+				"goalLog"
+			],
+			[
+				"play",
+				"players"
+			],
+			[
+				"home",
+				"home_team"
+			],
+			[
+				"kee",
+				"keeperScore"
+			],
+			[
+				"GOAL",
+				"GOAL_POINTS"
+			],
+			[
+				"eth",
+				"eth_homepage"
+			],
+			[
+				"im",
+				"image_file_to_string\tfunction"
+			],
+			[
+				"dete",
+				"load_img_and_detect_circle"
+			],
+			[
+				"cir",
+				"circles\tstatement"
+			],
+			[
+				"subi",
+				"sub_img\tstatement"
+			],
+			[
+				"capt",
+				"capture_image_on_change\tfunction"
+			],
+			[
+				"captu",
+				"capture_image_on_change"
+			],
+			[
+				"chan",
+				"change_prev\tstatement"
+			],
+			[
+				"img_",
+				"img_np\tstatement"
+			],
+			[
+				"img",
+				"img_prev\tstatement"
+			],
+			[
+				"li",
+				"list\tclass"
+			],
+			[
+				"detect",
+				"detect_circle\tfunction"
+			],
+			[
+				"circ",
+				"circle"
+			],
+			[
+				"inst",
+				"installed_packages_names\tstatement"
+			],
+			[
+				"insta",
+				"installed_packages\tstatement"
+			],
+			[
+				"fre",
+				"freqString\tstatement"
+			],
+			[
+				"occur",
+				"occurrence_list\tstatement"
+			],
+			[
+				"key",
+				"key_length\tparam"
+			],
+			[
+				"occ",
+				"occurrence_list"
+			],
+			[
+				"bre",
+				"break_vigenere\tfunction"
+			],
+			[
+				"comp",
+				"comp_list\tstatement"
+			],
+			[
+				"ioc",
+				"ioc_list\tstatement"
+			],
+			[
+				"en",
+				"eng_ioc_list\tstatement"
+			],
+			[
+				"freq_",
+				"freq_list\tparam"
+			],
+			[
+				"freq",
+				"freq_list\tparam"
+			],
+			[
+				"pri",
+				"print\tprint"
+			],
+			[
+				"mod",
+				"mod_26\tfunction"
+			],
+			[
+				"op",
+				"open\tfunction"
+			],
+			[
+				"ref",
+				"\\ref{key}                                         \tlatex-document"
+			],
+			[
+				"bulle",
+				"\\textbullet                                       \tlatex-document"
+			],
+			[
+				"empty",
+				"\\emptyset                                         \tlatex-mathsymbols"
+			],
+			[
+				"div",
+				"\\divide                                           \ttex"
+			],
+			[
+				"Left",
+				"\\Leftrightarrow                                   \tlatex-mathsymbols"
+			],
+			[
+				"over",
+				"\\overbrace{text}                                  \tlatex-document"
+			],
+			[
+				"b3",
+				"sections/4_logic/B3_theory"
+			],
+			[
+				"b2",
+				"sections/4_logic/B2_theory"
+			],
+			[
+				"B2",
+				"sections/4_logic/B2_theory"
+			],
+			[
+				"B1",
+				"sections/4_logic/B1_theory"
+			],
+			[
+				"camer",
+				"cameraScreen"
+			],
+			[
+				"game",
+				"gameScreen"
+			],
+			[
+				"cam",
+				"cameraScreen"
+			],
+			[
+				"behav",
+				"behaviourList"
+			],
+			[
+				"objectL",
+				"objectLogic"
+			],
+			[
+				"beha",
+				"behaviouralScreen"
+			],
+			[
+				"phy",
+				"physicalObjects"
+			],
+			[
+				"physica",
+				"physicalObject"
+			],
+			[
+				"physical",
+				"physicalObjects"
+			],
+			[
+				"Exp",
+				"ExpSineSquared"
+			],
+			[
+				"Ex",
+				"ExpSineSquared"
+			],
+			[
+				"my_",
+				"my_kernel_gram"
+			],
+			[
+				"ga",
+				"GaussianProcessClassifier"
+			],
+			[
+				"poly",
+				"polyKernel"
+			],
+			[
+				"final",
+				"final_test_data"
+			],
+			[
+				"y",
+				"y_train_final"
+			],
+			[
+				"ridge",
+				"ridge__alpha"
+			],
+			[
+				"Y",
+				"y_test"
+			],
+			[
+				"train",
+				"train_data"
+			],
+			[
+				"X_t",
+				"X_test"
+			],
+			[
+				"X_",
+				"X_train"
+			],
+			[
+				"X",
+				"X_final_test_poly"
+			],
+			[
+				"fina",
+				"final_test_data"
+			],
+			[
+				"y_",
+				"y_train"
+			],
+			[
+				"fit",
+				"fit_transform"
+			],
+			[
+				"as",
+				"as_matrix"
+			],
+			[
+				"RMS",
+				"RMSEscorer"
+			],
+			[
+				"traina",
+				"traindata"
+			],
+			[
+				"txt",
+				"txtEnvMap"
+			],
+			[
+				"view",
+				"viewDirection"
+			],
+			[
+				"tex",
+				"tex_coords"
+			],
+			[
+				"x",
+				"xyz"
+			],
+			[
+				"spec",
+				"specIntensity"
+			],
+			[
+				"ligh",
+				"lightPos"
+			],
+			[
+				"tm",
+				"tmpX"
+			],
+			[
+				"pos",
+				"posVtx"
+			],
+			[
+				"floa",
+				"floatToColor"
+			],
+			[
+				"compl",
+				"complexProduct"
+			],
+			[
+				"ma",
+				"maxIter"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"W",
+				"WelcomeMessage"
+			],
+			[
+				"p",
+				"pictureURL"
+			],
+			[
+				"role",
+				"Role"
+			],
+			[
+				"my",
+				"myRole"
+			],
+			[
+				"HT",
+				"HTMLheaderRole"
+			],
+			[
+				"HTML",
+				"HTMLheaderName"
+			],
+			[
+				"fun",
+				"funThoughts"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "score_calculator.js",
+			"settings":
+			{
+				"buffer_size": 10633,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Application/bin/updateHomepage.cmd",
+			"settings":
+			{
+				"buffer_size": 916,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assist_score_scraper.py",
+			"settings":
+			{
+				"buffer_size": 1022,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assists.json",
+			"settings":
+			{
+				"buffer_size": 2236,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test_data.json",
+			"settings":
+			{
+				"buffer_size": 109212,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "draft_scores_wc18.html",
+			"settings":
+			{
+				"buffer_size": 2384,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/css/style.css",
+			"settings":
+			{
+				"buffer_size": 8477,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Olivier/CloudStation/eth_homepage/homepage/teaching/fs18/analysisI18.html",
+			"settings":
+			{
+				"buffer_size": 7015,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "drafts.json",
+			"settings":
+			{
+				"buffer_size": 2112,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 234,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Anaconda Python Builder",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Anaconda Python Builder",
+					"Debug"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				"Debug"
+			]
+		],
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Anaconda Python Builder",
+					"Optimised"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				"Optimised"
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 153.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"project",
+				"Project Manager"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"resource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"e",
+				"Project: Edit Project"
+			],
+			[
+				"edi",
+				"Project: Edit Project"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"set syntax py",
+				"Set Syntax: Python"
+			],
+			[
+				"ignore",
+				"Set Syntax: Git Ignore"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"anaconda sett",
+				"Anaconda: Set Python interpreter"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"openre",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"reso",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"resou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"",
+				"Anaconda: Display object docs"
+			],
+			[
+				"resour",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"rescou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"bro",
+				"Preferences: Browse Packages"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"prefre",
+				"Preferences: Settings"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"resourceV",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"enable pack",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"Settings",
+				"Preferences: Settings"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"set theme",
+				"UI: Select Theme"
+			],
+			[
+				"dependen",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"open file",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"Snippet: ite",
+				"Snippet: Itemize"
+			],
+			[
+				"Snippet: latex",
+				"Snippet: Insert a LaTeX environment"
+			]
+		],
+		"width": 600.0
+	},
+	"console":
+	{
+		"height": 290.0,
+		"history":
+		[
+			"import socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((\"localhost\", 30754))",
+			"from mss import mss",
+			"conda install scikit-image",
+			"import cv2",
+			"python",
+			"exit()",
+			"list(range(1,3))",
+			"exit()",
+			"cd",
+			"dir",
+			"clear",
+			"list(1)",
+			"list(2,3)",
+			"range(1,3)",
+			"5",
+			"print(5)",
+			"clc",
+			"clear()",
+			"clear",
+			"exit()",
+			"quit()",
+			"py",
+			"python",
+			"cd",
+			"exit()",
+			"print(list)",
+			"list",
+			"lst = range(1,3)",
+			"var lst = range(1,3)",
+			"var list = range(1,3)",
+			"range(1,3)",
+			"exit()",
+			"help()",
+			"-h",
+			"-help",
+			"2+2",
+			"ls",
+			"-q",
+			"q",
+			"exit",
+			"quit()",
+			"dir",
+			"cd",
+			"dir",
+			"sublime.cache_path()",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Olivier/CloudStation/eth_homepage/homepage/draft_scores_wc_18",
+		"/C/Users/Olivier/CloudStation/eth_homepage/homepage/draft_scores_wc_18/assets",
+		"/C/Users/Olivier/CloudStation/eth_homepage/homepage/draft_scores_wc_18/assets/css",
+		"/C/Users/Olivier/CloudStation/eth_homepage/homepage/draft_scores_wc_18/assets/js"
+	],
+	"file_history":
+	[
+		"/C/Users/Olivier/CloudStation/eth_homepage/homepage/draft_scores_wc_18/assists.json",
+		"/C/Users/Olivier/CloudStation/Freizeit/worldcup18/draft_scores_wc_18/score_calculator.js",
+		"/C/Users/Olivier/CloudStation/Freizeit/worldcup18/draft_scores_wc_18/assets/css/style.css",
+		"/C/Users/Olivier/CloudStation/Freizeit/worldcup18/draft_scores_wc_18/drafts.json",
+		"/C/Users/Olivier/CloudStation/Freizeit/worldcup18/draft_scores_wc_18/draft_scores_wc18.html",
+		"/C/Users/Olivier/CloudStation/Freizeit/worldcup18/draft_scores_wc_18/data.json",
+		"/C/Users/Olivier/CloudStation/Freizeit/worldcup18/draft_scores_wc_18/test_data.json",
+		"/C/Application/bin/updateWorldCup18Drafts.cmd",
+		"/C/Application/bin/updateAnalysisWebpage.cmd",
+		"/C/Users/Olivier/CloudStation/eth_homepage/analysisI18_page/index.html",
+		"/C/Users/Olivier/CloudStation/eth_homepage/analysisI18_page/teaching/fs18/analysisI18.html",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/JSHint/Base File.sublime-settings",
+		"/C/Users/Olivier/CloudStation/Freizeit/worldcup18/world_cup_json/test.rb",
+		"/C/Users/Olivier/CloudStation/Freizeit/worldcup18/world_cup_json/Gemfile",
+		"/C/Users/Olivier/CloudStation/Freizeit/worldcup18/world_cup_json/config/initializers/filter_parameter_logging.rb",
+		"/C/Users/Olivier/CloudStation/Freizeit/worldcup18/world_cup_json/test/fixtures/events.yml",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/User/pythonOpenCV.sublime-build",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/Olivier/CloudStation/Studium/OpenCVTest/circle_detection.py",
+		"/C/Users/Olivier/AppData/Local/conda/conda/envs/myWindowsCV/lib/site-packages/pytesseract/pytesseract.py",
+		"/C/Users/Olivier/CloudStation/Freizeit/worldcup18/world_cup_json/public/500.html",
+		"/C/Users/Olivier/CloudStation/Studium/OpenCVTest/OpenCVTest.sublime-project",
+		"/C/Users/Olivier/AppData/Local/conda/conda/envs/myWindowsCV/lib/site-packages/pytesseract/__init__.py",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Preferences.sublime-settings",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Completion Rules.tmPreferences",
+		"/C/Users/Olivier/CloudStation/Freizeit/Kochen/Chicken_Wings_ENG.txt",
+		"/C/Users/Olivier/CloudStation/Freizeit/Kochen/Chicken_Wings_DE",
+		"/C/Application/bin/forTest.txt",
+		"/C/Users/Olivier/CloudStation/Studium/OpenCVTest/ocr.py",
+		"/C/Application/bin/helloWorld.cmd",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/HistPhilMath/TakeHomeMessages.txt",
+		"/C/Users/Olivier/CloudStation/eth_homepage/analysisI18_page/analysisI18.html",
+		"/Z/homepage/analysisI18.html",
+		"/C/Application/bin/updateAnalysisWebpage",
+		"/C/Users/Olivier/Desktop/oneNoteShortcut.ahk",
+		"/C/Application/bin/connectToEthDrive.cmd",
+		"/C/Application/bin/connectToEthDrive",
+		"/C/Application/bin/updateAnalysisPage.cmd",
+		"/C/Users/Olivier/Desktop/screen_capture.py",
+		"/C/Users/Olivier/CloudStation/Studium/OpenCVTest/screen_capture.py",
+		"/C/Users/Olivier/CloudStation/Studium/OpenCVTest/test.py",
+		"/C/Users/Olivier/CloudStation/Studium/OpenCVTest/autocomplete.py",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/Olivier/CloudStation/Studium/OpenCVTest/pytesser/test.py",
+		"/C/Users/Olivier/CloudStation/Studium/OpenCVTest/pytesser/pytesser.py",
+		"/C/Users/Olivier/AppData/Local/conda/conda/envs/myWindowsCV/Lib/site-packages/pytesser/pytesser.py",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Default.sublime-commands",
+		"/C/Users/Olivier/text.txt",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/Anaconda/README.md",
+		"/C/Users/Olivier/CloudStation/FTP hompage (backup)/analysisI18_page/analysisI18.html",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/Anaconda/anaconda_lib/autopep/autopep8_lib/__init__.py",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/PackageResourceViewer/PackageResourceViewer.sublime-settings",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/PackageResourceViewer/README.md",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/User/PackageResourceViewer.sublime-settings",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/C/Users/Olivier/AppData/Local/conda/conda/envs/myWindowsCV/Lib/site-packages/cv2.cp35-win_amd64.pyd",
+		"/C/Users/Olivier/test.txt",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/InfSec/Exercises/S01/vigenere.py",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/InfSec/Exercises/S02/bbs.py",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/HistPhilMath/Questions Lloyd.txt",
+		"/C/Users/Olivier/CloudStation/Studium/6. Semester/Learning And Intelligent Systems/Task1/pythontest.py",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/ML/Exercises/Ex02/problem1_4.py",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/ML/Questions ML",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/HistPhilMath/Questions Thakkar Wallis Newton Berkeley",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/HistPhilMath/Questions Hilbert.txt",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/ML/Demos/helper_files/plot_helpers.py",
+		"/C/Users/Olivier/Desktop/test.py",
+		"/C/Users/Olivier/CloudStation/Studium/6. Semester/Learning And Intelligent Systems/Task2/task2.py",
+		"/C/Program Files/Anaconda3/lib/site-packages/sklearn/linear_model/base.py",
+		"/C/Program Files/Anaconda3/lib/site-packages/sklearn/linear_model/__init__.py",
+		"/Z/homepage/index.html",
+		"/C/Users/Olivier/CloudStation/FTP hompage (backup)/analysisI18_page/index.html",
+		"/C/Users/Olivier/CloudStation/FTP hompage (backup)/my_site - Kopie/assets/css/style.css",
+		"/C/Users/Olivier/CloudStation/FTP hompage (backup)/my_site - Kopie/analysisI18.html",
+		"/C/Users/Olivier/CloudStation/FTP hompage (backup)/my_site - Kopie/info16.html",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/HistPhilMath/Answers Hilbert",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/HistPhilMath/Answers Wallis Berkeley",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/HistPhilMath/QuestionsRobson",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/HistPhilMath/Answers Hersh",
+		"/C/Users/Olivier/Downloads/template.tex",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/User/ShaderLanguages.sublime-settings",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/Jedi - Python autocompletion/README.md",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/Theme - Afterglow/Afterglow-magenta.sublime-theme",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/User/sublime_jedi.sublime-settings",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/Theme - Default/Default.sublime-theme",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/User/AutoDocstring.sublime-settings",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Installed Packages/Theme - Afterglow.sublime-package",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/AutoDocstring/AutoDocstring.sublime-settings",
+		"/C/Users/Olivier/CloudStation/Studium/6. Semester/Bachelor Arbeit/Thesis/TangibleGameEngine/C3_the-concept/the-internal-structure.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/B1_solutions.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/B3_solutions.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/B1_exercises.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/B3_theory.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/B3_exercises.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/B2_exercises.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/3_algebra/3_algebra.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/3_algebra/hands_on/HO_2_groups_solutions.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/main.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/3_algebra/hands_on/HO_2_groups_exercises.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/2_number_theory/2_number_theory_solutions_1.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/2_number_theory/2_number_theory.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/B1_theory.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/B2_theory.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/3_algebra/hands_on/HO_1_algebras_exercises.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/3_algebra/3_algebra2.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/test.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/B2_solutions.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/4_logic.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/diskmath-pvw.sublime-project",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/Analysis/MailingList/studentenliste2.csv",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/HistPhilMath/AnswersLakatos.txt",
+		"/C/Users/Olivier/CloudStation/Studium/8. Semester/HistPhilMath/QuestionsHersh.txt",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/main.aux",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeXTools (Advanced).sublime-settings",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/LaTeXTools/LaTeXTools.sublime-settings",
+		"/C/Users/Olivier/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/LatexPreview/test.tex",
+		"/C/Users/Olivier/AppData/Local/Sublime Text 3/Cache/LaTeXTools/internal/preview_math/a7a4ab22fe26cc9cdcc09eec3180b767.png.err",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/1_sets_and_relations/1_sets_and_relations.tex",
+		"/C/Users/Olivier/CloudStation/Studium/6. Semester/Analysis I Assi/analysis-pvk/analysis17_pvw.tex",
+		"/C/Users/Olivier/Downloads/Telegram Desktop/test.tex",
+		"/C/Users/Olivier/CloudStation/Studium/6. Semester/Analysis I Assi/analysis-pvk/sections/1_folgen_und_reihen/1_folgen_und_reihen.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/block1.tex",
+		"/C/Users/Olivier/CloudStation/Studium/6. Semester/Bachelor Arbeit/Thesis/TangibleGameEngine/C3_the-concept/C_the-concept.tex",
+		"/C/Users/Olivier/CloudStation/Studium/7. Semester/diskmathAssi/diskmath-pvk/sections/4_logic/block3.tex"
+	],
+	"find":
+	{
+		"height": 39.3333333333
+	},
+	"find_in_files":
+	{
+		"height": 208.0,
+		"where_history":
+		[
+			"analysisI18",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"table",
+			"teaching",
+			"mueller",
+			"lingard",
+			"tr",
+			"table",
+			"mertens",
+			"costa",
+			"drafting",
+			"computePlayerScore",
+			"getMatchesJSON",
+			"time",
+			"\"goal\"",
+			"against",
+			"ä",
+			"ü",
+			"ö",
+			"teaching/fs18/",
+			"teaching/fs18",
+			"fs18",
+			"teaching/fs18/",
+			"displayLog",
+			"goalL",
+			"console",
+			"alert",
+			"carlos",
+			"red_card",
+			"red",
+			"Varane",
+			"square_img_col",
+			"_",
+			"square_img",
+			"img",
+			"warn",
+			"auto",
+			"params",
+			"param",
+			"autoformat",
+			"params",
+			"complete",
+			"jsonse",
+			"pep",
+			"parameter",
+			"argument",
+			"focus"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 12,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "score_calculator.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2824,
+								2824
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 19.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Application/bin/updateHomepage.cmd",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 916,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assist_score_scraper.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1022,
+								1022
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": "\\",
+									"selector": "text.tex.latex"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assists.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2236,
+								2236
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 14877.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "test_data.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 109212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13866,
+								13866
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9223.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "draft_scores_wc18.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								163,
+								163
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"history_list_is_closing": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "assets/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5722,
+								5727
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4877.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/Olivier/CloudStation/eth_homepage/homepage/teaching/fs18/analysisI18.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7015,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								498,
+								492
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "drafts.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1592,
+								1592
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 839.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								234,
+								234
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "draft_scores_wc18.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1132,
+								1132
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 151.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 0,
+					"file": "score_calculator.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7983,
+								7983
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2261.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "draft_scores_wc18.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								776,
+								776
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 36,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"history_list_is_closing": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "assist_score_scraper.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1020,
+								1020
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "python"
+							},
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": "\\",
+									"selector": "text.tex.latex"
+								},
+								{
+									"characters": ".",
+									"selector": "source.python - string - constant.numeric"
+								}
+							],
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 72.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 236.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 144.0
+	},
+	"pinned_build_system": "Packages/User/pythonOpenCV.sublime-build",
+	"project": "draft_scores_wc18.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"assist_score_scraper.py"
+			],
+			[
+				"html",
+				"draft_scores_wc18.html"
+			],
+			[
+				"scr",
+				"assist_score_scraper.py"
+			],
+			[
+				"dr",
+				"drafts.json"
+			],
+			[
+				"dra",
+				"drafts.json"
+			],
+			[
+				"d",
+				"drafts.json"
+			],
+			[
+				"scra",
+				"assist_score_scraper.py"
+			],
+			[
+				"js",
+				"score_calculator.js"
+			],
+			[
+				"st",
+				"assets\\css\\style.css"
+			],
+			[
+				"h",
+				"draft_scores_wc18.html"
+			],
+			[
+				"hmt",
+				"index.html"
+			],
+			[
+				"htm",
+				"draft_scores_wc18.html"
+			],
+			[
+				"te",
+				"test_data.json"
+			],
+			[
+				"test",
+				"test_data.json"
+			],
+			[
+				"draf",
+				"drafts.json"
+			],
+			[
+				"py",
+				"pytesser\\pytesser.py"
+			],
+			[
+				"t",
+				"pytesser\\test.py"
+			],
+			[
+				"o",
+				"ocr.py"
+			],
+			[
+				"c",
+				"circle_detection.py"
+			],
+			[
+				"ci",
+				"circle_detection.py"
+			],
+			[
+				"edi",
+				"circle_detection.py"
+			],
+			[
+				"cir",
+				"circle_detection.py"
+			],
+			[
+				"au",
+				"autocomplete.py"
+			],
+			[
+				"user",
+				"C:\\Users\\Olivier\\AppData\\Roaming\\Sublime Text 3\\Packages\\Anaconda\\Anaconda.sublime-settings"
+			],
+			[
+				"an",
+				"C:\\Users\\Olivier\\CloudStation\\Studium\\OpenCVTest\\OpenCVTest.sublime-project"
+			],
+			[
+				"aut",
+				"autocomplete.py"
+			],
+			[
+				"auto",
+				"autocomplete.py"
+			],
+			[
+				"sc",
+				"screen_capture.py"
+			],
+			[
+				"set",
+				"C:\\Users\\Olivier\\AppData\\Roaming\\Sublime Text 3\\Packages\\Anaconda\\Preferences.sublime-settings"
+			],
+			[
+				"a",
+				"autocomplete.py"
+			],
+			[
+				"ana",
+				"C:\\Users\\Olivier\\AppData\\Roaming\\Sublime Text 3\\Packages\\Anaconda\\Anaconda.sublime-settings"
+			],
+			[
+				"scre",
+				"screen_capture.py"
+			],
+			[
+				"b1",
+				"sections\\4_logic\\B1_solutions.tex"
+			],
+			[
+				"b2",
+				"sections\\4_logic\\B2_solutions.tex"
+			],
+			[
+				"m",
+				"main.tex"
+			],
+			[
+				"b3",
+				"sections\\4_logic\\B3_theory.tex"
+			],
+			[
+				"b",
+				"sections\\4_logic\\B3_theory.tex"
+			],
+			[
+				"b3_ex",
+				"sections\\4_logic\\B3_exercises.tex"
+			],
+			[
+				"b3_sol",
+				"sections\\4_logic\\B3_solutions.tex"
+			],
+			[
+				"mai",
+				"main.tex"
+			],
+			[
+				"ma",
+				"main.tex"
+			],
+			[
+				"b2_th",
+				"sections\\4_logic\\B2_theory.tex"
+			],
+			[
+				"in",
+				"C:\\Users\\Olivier\\CloudStation\\Studium\\6. Semester\\Bachelor Arbeit\\Thesis\\TangibleGameEngine\\C3_the-concept\\the-internal-structure.tex"
+			],
+			[
+				"sol",
+				"sections\\4_logic\\B1_solutions.tex"
+			],
+			[
+				"b1_s",
+				"sections\\4_logic\\B1_solutions.tex"
+			],
+			[
+				"main",
+				"main.tex"
+			],
+			[
+				"ex",
+				"sections\\4_logic\\B1_exercises.tex"
+			],
+			[
+				"b1_",
+				"sections\\4_logic\\B1_exercises.tex"
+			],
+			[
+				"settings",
+				"C:\\Users\\Olivier\\AppData\\Roaming\\Sublime Text 3\\Packages\\LaTeXTools\\LaTeXTools.sublime-settings"
+			],
+			[
+				"sys",
+				"LaTeXTools System Check"
+			],
+			[
+				"b1_th",
+				"sections\\4_logic\\B1_theory.tex"
+			],
+			[
+				"b2_e",
+				"sections\\4_logic\\B2_exercises.tex"
+			],
+			[
+				"b1_ex",
+				"sections\\4_logic\\B1_exercises.tex"
+			],
+			[
+				"exer",
+				"sections\\4_logic\\B2_exercises.tex"
+			],
+			[
+				"b3_th",
+				"sections\\4_logic\\B3_theory.tex"
+			],
+			[
+				"logi",
+				"sections\\4_logic\\4_logic.tex"
+			],
+			[
+				"b1_e",
+				"sections\\4_logic\\B1_exercises.tex"
+			],
+			[
+				"thes",
+				"thesis.tex"
+			],
+			[
+				"rel",
+				"C2_related-work\\C_related-work.tex"
+			],
+			[
+				"th",
+				"thesis.tex"
+			],
+			[
+				"eva",
+				"C5_user-study\\evaluation.tex"
+			],
+			[
+				"p",
+				"preamble.tex"
+			],
+			[
+				"ou",
+				"C6_conclusion\\outlook.tex"
+			],
+			[
+				"le",
+				"C6_conclusion\\lessons-learnt.tex"
+			],
+			[
+				"con",
+				"C6_conclusion\\C_conclusion.tex"
+			],
+			[
+				"e",
+				"C5_user-study\\evaluation.tex"
+			],
+			[
+				"ev",
+				"C5_user-study\\evaluation.tex"
+			],
+			[
+				"de",
+				"C5_user-study\\design-of-the-study.tex"
+			],
+			[
+				"us",
+				"C5_user-study\\C_user-study.tex"
+			],
+			[
+				"ru",
+				"C4_implementation\\the-runtime.tex"
+			],
+			[
+				"ed",
+				"C4_implementation\\the-editor.tex"
+			],
+			[
+				"f",
+				"C4_implementation\\the-first-prototype.tex"
+			],
+			[
+				"im",
+				"C4_implementation\\C_implementation.tex"
+			],
+			[
+				"thefi",
+				"C4_implementation\\the-first-prototype.tex"
+			],
+			[
+				"hu",
+				"C3_the-concept\\human-computer-interaction.tex"
+			],
+			[
+				"intern",
+				"C3_the-concept\\the-internal-structure.tex"
+			],
+			[
+				"ab",
+				"abstract.tex"
+			],
+			[
+				"less",
+				"C6_conclusion\\lessons-learnt.tex"
+			],
+			[
+				"des",
+				"C5_user-study\\design-of-the-study.tex"
+			],
+			[
+				"ap",
+				"apx-sample-appendix.tex"
+			],
+			[
+				"re",
+				"C2_related-work\\C_related-work.tex"
+			],
+			[
+				"pr",
+				"preamble.tex"
+			],
+			[
+				"outl",
+				"C4_conclusion\\S42_outlook.tex"
+			],
+			[
+				"les",
+				"C4_conclusion\\S41_lessonsLearnt.tex"
+			],
+			[
+				"c4",
+				"C4_conclusion\\C4_conclusion.tex"
+			],
+			[
+				"dya",
+				"C3_implementation\\S33_dynamicSide.tex"
+			],
+			[
+				"static",
+				"C3_implementation\\S32_staticSide.tex"
+			],
+			[
+				"over",
+				"C3_implementation\\S31_overview.tex"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 750.0,
+		"last_filter": "s",
+		"selected_items":
+		[
+			[
+				"s",
+				"C:\\Users\\Olivier\\CloudStation\\Studium\\6. Semester\\Bachelor Arbeit\\Thesis\\TangibleGameEngine\\tangibleGameEngine.sublime-project"
+			]
+		],
+		"width": 570.0
+	},
+	"select_symbol":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 542.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

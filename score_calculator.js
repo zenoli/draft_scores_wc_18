@@ -105,7 +105,14 @@ function updateCardScore(participant, player, isYellow = true) {
 
 function computeKeeperScore(participant, match) {
 	goalie = participant.drafts.goalie;
+	var playingGoalieH = match.home_team_statistics.starting_eleven[0].name.toLowerCase();
+	var playingGoalieA = match.away_team_statistics.starting_eleven[0].name.toLowerCase();
+	var isPlaying = goalie.name === playingGoalieH || goalie.name === playingGoalieA;
 	if (goalie.nation === match.home_team.country.toLowerCase()) {
+		if (!isPlaying) {
+			participant.keeperLog.push(goalie.name + " was not playing against " + match.away_team.country + ". Better luck next time " + participant.name +"! (0 PTS).");
+			return;
+		}
 		if (match.away_team.goals == 0) {
 			participant.keeperScore += CLEAN_VEST_POINTS;
 			participant.keeperLog.push("Clean vest from " + goalie.name + " against " + match.away_team.country + ". (" + CLEAN_VEST_POINTS + " PTS)");
@@ -118,6 +125,10 @@ function computeKeeperScore(participant, match) {
 		}
 	}
 	else if (goalie.nation === match.away_team.country.toLowerCase()) {
+		if (!isPlaying) {
+			participant.keeperLog.push(goalie.name + " was not playing against " + match.home_team.country  + ". Better luck next time " + participant.name +"! (0 PTS).");
+			return;
+		}
 		if (match.home_team.goals == 0) {
 			participant.keeperScore += CLEAN_VEST_POINTS;
 			participant.keeperLog.push("Clean vest from " + goalie.name + " against " + match.home_team.country + ". (" + CLEAN_VEST_POINTS + " PTS)");
