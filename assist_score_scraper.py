@@ -32,5 +32,3 @@ print(json_string)
 assistsFile = open("assists.json","w")
 assistsFile.write(json_string)
 assistsFile.close()
-
-

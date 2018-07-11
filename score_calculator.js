@@ -144,7 +144,7 @@ function computeKeeperScore(participant, match) {
 			participant.keeperScore += match.home_team.goals;
 			var goalWord = match.home_team.goals > 1 ? "goals" : "goal";
 			var pointWord = match.away_team.goals > 1 ? " PTS)" : " PT)";
-			participant.keeperLog.push(goalieName + " received " + match.home_team.goals + " " + goalWord + " against " + match.home_team.country + ". (" + match.away_team.goals + pointWord);
+			participant.keeperLog.push(goalieName + " received " + match.home_team.goals + " " + goalWord + " against " + match.home_team.country + ". (" + match.home_team.goals + pointWord);
 		}
 	}
 }
